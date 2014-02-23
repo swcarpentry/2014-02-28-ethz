@@ -2,37 +2,45 @@
   <h3>Linux / Python</h3>
 
   <p>
-    We recommend the all-in-one scientific Python installer
-    <a href="http://continuum.io/downloads.html">Anaconda</a>.
-    (Installation requires using the shell and if you aren't
-    comfortable doing the installation yourself just
-    download the installer and we'll help you at the boot
-    camp.)
-  </p>
-  
-  <ol>
-    <li>
-      Download the installer that matches your operating
-      system and save it in your home folder.
-    </li>
-    <li>
-      Open a terminal window..
-    </li>
-    <li>
-      Type <pre>bash Anaconda-</pre> and then press
-      tab. The name of the file you just downloaded should
-      appear.
-    </li>
-    <li>
-      Press enter. You will follow the text-only
-      prompts. When there is a colon at the bottom of the
-      screen press the down arrow to move down through the
-      text. Type <code>yes</code> and press enter to approve
-      the license. Press enter to approve the default
-      location for the files. Type <code>yes</code> and
-      press enter to prepend Anaconda to
-      your <code>PATH</code> (this makes the Anaconda
-      distribution the default Python).
-    </li>
-  </ol>
+    If you do not wish to use the
+    <a href="http://continuum.io/downloads.html">Anaconda</a>
+    Python distrubution, you should install:
+    <ul>
+      <li>
+        <a href="http://www.python.org/download/releases/2.7.6/">
+        Python</a> (Note: we recommend installing Python 2.7.x
+        rather than Python 3.x for maximum compatibility, though
+        all up-to-date versions of the packages required should
+        be 3.x compatible)
+      </li>
+      <li>
+        <a href="http://www.scipy.org/scipylib/download.html">
+        NumPy</a>
+      </li>
+      <li>
+        <a href="http://matplotlib.org/downloads.html">
+          matplotlib</a>
+      </li>
+      <li>
+        <a href="http://ipython.org/install.html">
+        iPython</a> (Optional, but it provides a more advanced
+        Python interpreter, amongst other tools)
+    </ul>
+    Most are likely available via your distro's package
+    manager, e.g.
+    <ul>
+      <li>
+        Ubuntu:<br />
+        <code>sudo apt-get install python2.7 python-numpy
+        python-matplotlib</code>
+        Optional:<br />
+        <code>sudo apt-get install ipython-notebook</code>
+      </li>
+      <li>
+        Fedora:<br />
+        <code>sudo yum install python numpy python-matplotlib</code>
+        <br />Optional:<br />
+        <code>sudo yum install python-ipython-nodebook</code>
+      </li>
+    </ul>
 </div>
